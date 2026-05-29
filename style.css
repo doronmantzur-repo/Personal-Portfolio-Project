@@ -206,36 +206,89 @@ body > .header{
 
 .my-projects{
   display: flex;
-  background-color: #bfbbbb;
+  flex-direction: column;
+  background-color: #d7e4e7;;
+  height: 800px;
 }
 
 .my-projects > .label{
+  display:flex;
   font-size: 2.4rem;
+  justify-content: center;
+  flex:2;
 }
 
 .my-projects > .list{
   display:flex;
+  flex:5;
+  margin-right:100px;
+  margin-left:100px;
+  margin-bottom:40px;
+  margin-top:40px;
 }
 
-.my-projects > .list > .image{
-  background-color: #e7e4e4;
-}
-
-.my-projects > .list > .description{
+.my-projects > .list > .project{
   display:flex;
+  flex-direction: column;
+  flex:1;
+  align-items: center;
 }
 
-.my-projects > .list > .description > .label{
+.my-projects > .list > .project > .prj-container
+{
+  display:flex;
+  flex-direction: column;
+  width: 70%;
+  flex:1;
+  border-radius: 20px;
+  box-shadow: 0px 7px 13px 0px #000000;
+}
+
+.my-projects > .list > .project > .prj-container > .image{
+  flex:1;
+  background-color: #e1eaed;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.my-projects > .list > .project > .prj-container > .description{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  background-color: #fff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.my-projects > .list > .project > .prj-container > .description > .label{
   font-weight: bold;
+  font-size: 1.5rem;
+  flex:2;
 }
 
-.my-projects > .list > .description > .info{
+.my-projects > .list > .project > .prj-container > .description > .info{
   font-size: 1.2rem;
+  color: #88829c;
+  font-weight: 500;
+  flex:3;
 }
 
-.my-projects > .list > .description > .button{
+.my-projects > .list > .project > .prj-container > .description > .button{
+  display:flex;
+  justify-content: center;
+  font-size: 1.2rem;
   background-color: orange;
   color: #fff;
+  flex:2;
+  border-radius: 20px;
+  width:40%;
+  padding-right:10px;
+  padding-left:10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-items: center;
 }
 
 /* ######################################################### */
