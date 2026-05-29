@@ -293,23 +293,41 @@ body > .header{
 
 /* ######################################################### */
 
+.contact{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  background-color: #ffff;
+}
+
+.contact > .header{
+  display:flex;
+  font-size: 2.5rem;
+  flex:1;
+  font-size: 2.4rem;
+  justify-content: center;
+
+}
+
+.contact > .bottom{
+  display:flex;
+  flex:4;
+}
+
+.contact > .bottom > .left{
+  display:flex;
+}
+
+.contact > .bottom > .right{
+  display:flex;
+}
+
+/* ######################################################### */
+
 .footer{
   display: flex;
-  background-color: #e3dddd;
-}
-
-.footer > .header{
-  font-size: 2.5rem;
-}
-
-.footer > .bottom{
-  display:flex;
-}
-
-.footer > .bottom > .left{
-  display:flex;
-}
-
-.footer > .bottom > .right{
-  display:flex;
+  background-color: #120303;
+  color: #fff;
+  height: 100px;
+  justify-content: center;
 }
